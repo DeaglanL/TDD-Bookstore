@@ -8,16 +8,20 @@ public class BookStore {
     public Map<Integer,Book> content = new HashMap<Integer, Book>();
 
     public void addBook(int id, String author, String title, String genre){
-
+        Book b = new Book(id,author,title,genre);
+        content.put(id, b);
     }
 
     public Book removeByID(Integer id){
-        return null;
+        Book b = content.get(id);
+       content.remove(id);
+
+       return b;
     }
 
-    public int getGenreAmount(String genre)
+    public long getGenreAmount(String genre)
     {
-        return 0;
+        return content.entrySet().stream().filter(eachBook -> eachBook.getValue().getGenre() == genre).count();
     }
 
 

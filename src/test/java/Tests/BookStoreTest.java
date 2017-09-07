@@ -34,7 +34,7 @@ public class BookStoreTest {
     }
 
     @Test
-    public void getGenreAmount(){
+    public void getGenreAmountTest(){
        Assert.assertEquals("Should return the number of books from a given genre", store.getGenreAmount("Post-apocalyptic"),1);
     }
 
