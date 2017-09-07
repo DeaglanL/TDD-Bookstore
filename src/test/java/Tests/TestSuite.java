@@ -5,9 +5,9 @@ import org.junit.runners.Suite;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-        TestExampleClass.class
+        TestSuite.class
 })
 
 
-public class TestExampleClass {
+public class TestSuite {
 }
