@@ -1,21 +1,25 @@
-package BookStore;
+package BookStore.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
-
+@Entity
 public class Book {
-    private  int id;
+
+    @Id
+    private  long id;
     private String author;
     private String title;
     private String genre;
 
-    public Book(int id, String author, String title, String genre){
+    public Book(long id, String author, String title, String genre){
         this.id = id;
         this.author = author;
         this.title = title;
         this.genre = genre;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 

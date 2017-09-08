@@ -1,12 +1,14 @@
 package Tests;
 
-import BookStore.BookStore;
+import BookStore.BookStoreImplConsole;
+import BookStore.model.Book;
 import org.junit.*;
 
 
-public class BookStoreTest {
+public class BookStoreImplConsoleTest {
 
-    BookStore store;
+    BookStoreImplConsole store;
+    long id = 0;
 
     @BeforeClass
     public static void beforeClass() {
@@ -14,21 +16,23 @@ public class BookStoreTest {
 
     @Before
     public void beforeTest() {
-        store = new BookStore();
-        store.addBook(0, "Dmitry Glukhovsky", "Metro 2033", "Post-apocalyptic");
+        store = new BookStoreImplConsole();
+        store.addBook(new Book( 0, "Dmitry Glukhovsky", "Metro 2033", "Post-apocalyptic"));
+
 
     }
 
     @Test
     public void addBookTest(){
-        Assert.assertEquals("Should have added a book", store.content.get(0).getTitle(),"Metro 2033" );
+        Assert.assertEquals("Should have added a book", store.content.get(id).getTitle(),"Metro 2033" );
 
     }
 
     @Test
     public void removeBookTest(){
 
-        Assert.assertEquals("Should remove the right book", store.removeByID(0).getTitle(),"Metro 2033" );
+
+        Assert.assertEquals("Should remove the right book", store.removeByID(id).getTitle(),"Metro 2033" );
        Assert.assertTrue("Should remove book", store.content.isEmpty());
 
     }
