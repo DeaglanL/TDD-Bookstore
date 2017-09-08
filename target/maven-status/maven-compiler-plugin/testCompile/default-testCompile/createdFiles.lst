@@ -1,0 +1,3 @@
+Tests\TestSuite.class
+Tests\BookStoreImpleJSONTest.class
+Tests\BookStoreImplConsoleTest.class

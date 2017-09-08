@@ -1,0 +1,7 @@
+
+jsquid:UselessImportCheck"<Remove this unused import 'javax.enterprise.inject.Default'.(ªéñÿÿÿÿÿ8›«æ+
+gsquid:S1192"FDefine a constant instead of duplicating this literal "drama" 3 times.(ÂÇÎ©ÿÿÿÿÿ8ëÉàæ+
+tsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(¬ãé¥8£Ë‘æ+
+tsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Â¡¶8£Ë‘æ+
+…"squid:ClassVariableVisibilityCheck"SMake content a static final constant or non-public and provide accessors if needed.(Â¡¶8£Ë‘æ+
+Ysquid:UselessImportCheck"0Remove this unused import 'javax.ejb.Stateless'.(ä¬8›«æ+

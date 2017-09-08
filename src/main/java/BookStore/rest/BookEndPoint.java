@@ -3,7 +3,7 @@ package BookStore.rest;
 import BookStore.BookStore;
 import BookStore.model.Book;
 
-import javax.*;
+
 import javax.inject.Inject;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;

@@ -5,7 +5,7 @@ import BookStore.model.Book;
 public interface BookStore {
     String  getAllBook();
 
-    void populateBookStore(Book[] books);
+    void populateBookStore();
 
     void addBook(Book book);
 

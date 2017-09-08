@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="TDD-Bookstore:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="TDD-Template.war">
+      <element id="artifact" artifact-name="TDD-Bookstore:war exploded" />
+    </root>
+  </artifact>
+</component>

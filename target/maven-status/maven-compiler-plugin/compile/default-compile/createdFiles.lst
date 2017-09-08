@@ -1,0 +1,7 @@
+BookStore\rest\JAXActivator.class
+BookStore\util\JSONUtil.class
+BookStore\BookStoreImplConsole.class
+BookStore\rest\BookEndPoint.class
+BookStore\model\Book.class
+BookStore\BookStoreImplJSON.class
+BookStore\BookStore.class
